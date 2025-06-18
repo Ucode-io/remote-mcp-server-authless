@@ -1,0 +1,38 @@
+{
+	"$schema": "https://biomejs.dev/schemas/2.0.0/schema.json",
+	"assist": {
+		"enabled": true,
+		"actions": {
+			"source": {
+				"useSortedKeys": "on"
+			}
+		}
+	},
+	"files": {
+		"includes": ["!worker-configuration.d.ts"]
+	},
+	"vcs": {
+		"enabled": true,
+		"clientKind": "git",
+		"useIgnoreFile": true
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"suspicious": {
+				"noExplicitAny": "off",
+				"noDebugger": "off",
+				"noConfusingVoidType": "off"
+			},
+			"style": {
+				"noNonNullAssertion": "off"
+			}
+		}
+	},
+	"formatter": {
+		"enabled": true,
+		"indentWidth": 4,
+		"lineWidth": 100
+	}
+}
